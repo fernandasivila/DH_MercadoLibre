@@ -1,6 +1,7 @@
 body{
     font-family: 'Roboto', sans-serif;
     font-size: 12px;
+    background-color: #EAC926;
 }
 .precio{
     font-size: 18px;
@@ -8,6 +9,11 @@ body{
 .descuentos,.descripciones{
     font-size: 16px;
 }
+
+footer{
+    background-color: #ebebeb;;
+}
+
 footer section i{
     color: #1259c3;
     size: 2em;
