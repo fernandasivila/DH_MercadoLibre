@@ -1,70 +1,135 @@
-body footer{
-    background-color: #ebebeb;
-    width: 100%;
-    padding-top: 10px;
-    padding-bottom: 5px;
-    padding-left: 5px;
-    bottom: 0;
-    left: 0;
-    right: 0;
-}
+/* Secciones principales*/
 
 body{
     font-family: 'Roboto', sans-serif;
     font-size: 12px;
     background-color: #EAC926;
 }
-.precio{
-    font-size: 18px;
+
+/* header*/
+
+header p{
+    text-align: center;
+    color: #000000;
 }
-.descuentos,.descripciones{
-    font-size: 16px;
-}
-.titulares{
-    font-size: 24px;
+
+.login,.site{
+    display: none;
 }
 .burger-menu i{
     color:#ffffff;
-    size: 20px;
+    font-size: 20px;
+    background-color: #1259c3;
+    padding: 9px 10px;
+    border-radius: 4px;
 }
 
 .burger-menu{
     text-align: center;
-    background-color: #1259c3;
-    border-radius: 3px;
-    padding: 5px 7px 5px 7px;
-    display: inline-block;
-    justify-content: center;
+    margin: 30px;
 }
-header p{
+
+/* footer*/
+
+footer{
+    background-color: #ffffff;
+    width: 100%;
+    margin-left: 0;
+    margin-bottom: 0;
+    padding: 15px;
     text-align: center;
 }
-
-img{
-    width: 35%;
-    height: 30%;
-}
-
-.productos{
-    text-align: center;
-    padding-top: 10px;
-    padding-bottom: 10px;    
-}
-
-
 footer section i{
     color: #1259c3;
     size: 2em;
     margin-bottom: 10px;
 }
 
-footer section{
-    text-align: center;
-}
 footer section.copyright{
     text-align: left;
+    margin-top: 20px;
 }
 
-header i{
-    color: #000000;
+/* main */
+
+main{
+    background-color: #ebebeb;
+    text-align: center;
+    width: 90%;
+}
+
+.titulares{
+    font-size: 24px;
+    color:#666;
+}
+
+.productos{
+    text-align: center;
+    margin: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;    
+}
+
+img{
+    width: 100%;
+}
+
+.informacion{
+    background-color: #ffffff;
+    text-align: left;
+    padding: 15px;
+    border-top: solid #ebebeb 1px;
+
+}
+
+.informacion i{
+    font-size: 15px;
+    border-radius: 20px;
+    border: solid #39b54a 1px;
+    padding: 4px 13px 13px 4px;
+    color: #39b54a;
+}
+
+.precio{
+    font-size: 18px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+.descuentos{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    color: #39b54a;
+    font-size: 16px;
+}
+
+.descripciones{
+    display: none;
+}
+
+@media (min-width: 361px){
+    .login,.site{
+        text-align: left;
+        display: inline;
+    }
+    .burger-menu{
+        display: none;
+    }
+    .descripciones{
+        color:#666;
+        font-size: 16px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        display: inline-block;
+    }
+    .productos{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+    main{
+        margin-top: 15px;
+    }
+
+
+}
+@media (min-width: 769px){
+   /* notebook */
 }
