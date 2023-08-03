@@ -117,6 +117,9 @@ footer section.copyright{
 main{
     background-color: #ebebeb;
     width: 100%;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
 }
 
 
@@ -124,6 +127,82 @@ main{
     font-size: 24px;
     color:#666;
 
+}
+
+.register-form{
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    width: 100%;
+}
+
+.register-labels{
+    font-size: 1.1em;
+    padding-bottom: 7px;
+    padding-top: 5px;
+}
+.register-form form{
+    display: flex;
+    flex-direction: column;
+}
+
+.register-form input{
+    padding: 10px;
+    border-radius: 7px;
+    border: solid 1.5px #ebebeb;
+}
+
+.user-names input, .passwords input{
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.register-form label{
+    margin: 5px;
+}
+
+.profile-radio{
+    display: flex;
+    flex-direction: row;
+}
+
+.profile-radio label{
+    display: flex;
+    align-items: center;
+}
+
+.profile-radio label input{
+    margin-right: 15px;
+}
+
+.intereses{
+    display: flex;
+    flex-direction: column;
+}
+
+.intereses label{
+    display: flex;
+    align-items: center;
+}
+
+.intereses label input{
+    margin-right: 15px;
+    margin-left: 20px;
+}
+
+.botones{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+}
+
+button{
+    background-color: #1259c3;
+    color: #ffffff;
+    padding: 5px 20px;
+    border: #1259c3 solid 1px;
+    border-radius: 7px;
 }
 
 
@@ -139,6 +218,7 @@ main{
         align-items: center;
         width: 100%;
         padding-top: 0px;
+        padding-right: 10px;
     }
     .header-mobile{
         width: 60%;
@@ -169,6 +249,20 @@ main{
     main{
         margin-top: 15px;
     } 
+
+    .register-form{
+        width: 90%;
+    }
+
+    .user-names, .passwords{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .user-names input, .passwords input{
+        margin-bottom: 10px;
+        width: 49.5%;
+    }
 }
 
 @media (min-width: 769px){
@@ -206,6 +300,12 @@ main{
     }
     .burger-menu{
         display: none;
+    }
+
+    /* main*/
+
+    .register-form{
+        width: 50%;
     }
 
     

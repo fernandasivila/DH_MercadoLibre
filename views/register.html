@@ -21,7 +21,7 @@
 
         <div class="barra-busqueda">
             <form action="GET">
-                <input type="text" placeholder="Buscar productos, marcas">
+                <input type="search" placeholder="Buscar productos, marcas">
                 <i class="fa-solid fa-magnifying-glass"></i>
             </form>
         </div>
@@ -51,27 +51,38 @@
 
         <div class="register-form">
         <form action="">
-            <input type="text" name="full-name" placeholder="Nombre y apellido"><br>
-            <input type="text" name="user-name" placeholder="Nombre de usuario"><br>
-            <label for="date">Fecha de nacimiento</label>
-            <input type="date" name="date" placeholder="/aaaa/mm/dd"><br>
-            <input type="text" name="address" placeholder="Domicilio"><br>
-            <label>Perfil de usuario</label>
-            <label ><input type="radio" name="profile">Comprador</label>
-            <label ><input type="radio" name="profile">Vendedor</label>
-            <label>Intereses</label>
-            <label><input type="checkbox">Electro</label>
-            <label><input type="checkbox">Moda</label>
-            <label><input type="checkbox">Hogar</label>
-            <label><input type="checkbox">Juguetería</label>
-            <label><input type="checkbox">Vida sana</label>
-            <label for="user-photo">Foto de usuario</label>
-            <input type="file" name="user-photo" id="user-photo" accept=".jpg, .png"><br>
-            <input type="password" name="password" placeholder="Contraseña"><br>
-            <input type="password" name="confirm-password" placeholder="Confirmar contraseña"><br>
-            <button type="submit">Enviar</button>
-            <button type="reset">Borrar</button>
+            <div class="user-names">
+            <input type="text" name="full-name" placeholder="Nombre y apellido" minlength="5" maxlength="30" required><br>
+            <input type="text" name="user-name" placeholder="Nombre de usuario" minlength="5" required><br>
+            </div>
+            <label for="date" class="register-labels"><b>Fecha de nacimiento</b></label>
+            <input type="date" name="date" min="1933-01-01" max="2010-01-01" required><br>
+            <input type="text" name="address" placeholder="Domicilio" maxlength="100" required><br>
             
+            <label class="register-labels"><b>Perfil de usuario</b></label>
+            <div class="profile-radio">
+            <label ><input type="radio" name="profile" required> Comprador</label>
+            <label ><input type="radio" name="profile"> Vendedor</label>
+            </div>
+            
+            <label class="register-labels"><b>Intereses</b></label>
+            <div class="intereses">
+            <label><input type="checkbox" required> Electro</label>
+            <label><input type="checkbox"> Moda</label>
+            <label><input type="checkbox"> Hogar</label>
+            <label><input type="checkbox"> Juguetería</label>
+            <label><input type="checkbox"> Vida sana</label>
+            </div>
+            <label for="user-photo" class="register-labels"><b>Foto de usuario</b></label>
+            <input type="file" name="user-photo" id="user-photo" accept=".jpg, .png"><br>
+            <div class="passwords">
+            <input type="password" name="password" placeholder="Contraseña" maxlength="15" required><br>
+            <input type="password" name="confirm-password" placeholder="Confirmar contraseña" maxlength="15" required><br>
+            </div>
+            <div class="botones">
+            <button type="submit"><b>Enviar</b></button>
+            <button type="reset"><b>Borrar</b></button>
+            </div>
         </form>
         </div>
     </main>
