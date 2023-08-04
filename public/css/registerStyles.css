@@ -97,19 +97,32 @@ footer{
     background-color: #ffffff;
     width: 100%;
     margin-left: 0;
-    margin-bottom: 0px;
+    margin-bottom: 0;
     padding: 15px;
     text-align: center;
 }
 footer section i{
     color: #1259c3;
-    size: 2em;
+    font-size: 2em;
     margin-bottom: 10px;
 }
 
 footer section.copyright{
     text-align: left;
-    margin-top: 20px;
+    margin-top: 30px;
+}
+
+.footer-items{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.footer-items section{
+    margin-bottom: 20px;
+    width: 85%;
 }
 
 /* main */
@@ -120,13 +133,6 @@ main{
     padding: 30px;
     display: flex;
     justify-content: center;
-}
-
-
-.titulares{
-    font-size: 24px;
-    color:#666;
-
 }
 
 .register-form{
@@ -144,6 +150,7 @@ main{
 .register-form form{
     display: flex;
     flex-direction: column;
+    width: 100%;
 }
 
 .register-form input{
@@ -164,6 +171,8 @@ main{
 .profile-radio{
     display: flex;
     flex-direction: row;
+    width: 100%;
+    justify-content: space-around;
 }
 
 .profile-radio label{
@@ -203,9 +212,13 @@ button{
     padding: 5px 20px;
     border: #1259c3 solid 1px;
     border-radius: 7px;
+    transition: all 450ms;
 }
 
-
+button:hover{
+    background-color: #0022AA;
+    border-color: #0022AA;
+}
 
 
 @media (min-width: 361px){
@@ -244,6 +257,21 @@ button{
         width: 40%;
     }
 
+    /* footer */
+
+    .footer-items section{
+        width: 65%;
+    }
+
+    .footer-items section i{
+        transition: all 450ms;
+    }
+
+    .footer-items section:hover i{
+        color: #0022AA;
+        font-size: 2.5em;
+    }
+
     /* main */
 
     main{
@@ -262,6 +290,18 @@ button{
     .user-names input, .passwords input{
         margin-bottom: 10px;
         width: 49.5%;
+    }
+
+    button{
+        padding: 7px 50px;
+    }
+
+    .intereses label{
+        font-size: 1.2em;
+    }
+
+    .profile-radio label{
+        font-size: 1.2em;
     }
 }
 
@@ -301,6 +341,21 @@ button{
     .burger-menu{
         display: none;
     }
+
+    /* footer */
+
+    .footer-items{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+    }
+    
+    .footer-items section{
+        width: 30%;
+    }
+
 
     /* main*/
 

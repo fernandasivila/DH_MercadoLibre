@@ -103,13 +103,26 @@ footer{
 }
 footer section i{
     color: #1259c3;
-    size: 2em;
+    font-size: 2em;
     margin-bottom: 10px;
 }
 
 footer section.copyright{
     text-align: left;
-    margin-top: 20px;
+    margin-top: 30px;
+}
+
+.footer-items{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.footer-items section{
+    margin-bottom: 20px;
+    width: 85%;
 }
 
 /* main */
@@ -117,16 +130,44 @@ footer section.copyright{
 main{
     background-color: #ebebeb;
     width: 100%;
+    padding: 70px 30px;
+    display: flex;
+    justify-content: center;
 }
 
-
-.titulares{
-    font-size: 24px;
-    color:#666;
-
+.login-form{
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    width: 100%;
 }
 
+.login-form form{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
 
+.login-form input{
+    padding: 10px;
+    border-radius: 7px;
+    border: solid 1.5px #ebebeb;
+    margin-bottom: 25px;
+}
+
+button{
+    background-color: #1259c3;
+    color: #ffffff;
+    padding: 7px 20px;
+    border: #1259c3 solid 1px;
+    border-radius: 7px;
+    transition: all 450ms;
+}
+
+button:hover{
+    background-color: #0022AA;
+    border-color: #0022AA;
+}
 
 
 @media (min-width: 361px){
@@ -164,11 +205,30 @@ main{
         width: 40%;
     }
 
+     /* footer */
+
+     .footer-items section{
+        width: 65%;
+    }
+
+    .footer-items section i{
+        transition: all 450ms;
+    }
+
+    .footer-items section:hover i{
+        color: #0022AA;
+        font-size: 2.5em;
+    }
+
     /* main */
 
     main{
         margin-top: 15px;
-    } 
+    }
+    
+    .login-form{
+        width: 70%;
+    }
 }
 
 @media (min-width: 769px){
@@ -206,6 +266,27 @@ main{
     }
     .burger-menu{
         display: none;
+    }
+
+    /* footer */
+
+    .footer-items{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+    }
+    
+    .footer-items section{
+        width: 30%;
+    }
+
+
+    /* main */
+
+    .login-form{
+        width: 50%;
     }
 
     

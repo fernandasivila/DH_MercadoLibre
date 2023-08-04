@@ -104,14 +104,28 @@ footer{
 }
 footer section i{
     color: #1259c3;
-    size: 2em;
+    font-size: 2em;
     margin-bottom: 10px;
 }
 
 footer section.copyright{
     text-align: left;
-    margin-top: 20px;
+    margin-top: 30px;
 }
+
+.footer-items{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.footer-items section{
+    margin-bottom: 20px;
+    width: 85%;
+}
+
 
 /* main */
 
@@ -149,7 +163,7 @@ img{
 .informacion{
     background-color: #ffffff;
     text-align: left;
-    padding: 15px;
+    padding: 15px 15px 0px 15px;
     border-top: solid #ebebeb 1px;
     position: relative;
 }
@@ -172,6 +186,7 @@ img{
 .product-des-costo{
     display: flex;
     align-items: flex-end;
+    margin-bottom: 10px;
 }
 
 .precio{
@@ -185,7 +200,8 @@ img{
 }
 
 .descripciones{
-    display: none;
+    font-size: 0.5px;
+    color: #ffffff;
 }
 
 
@@ -224,26 +240,59 @@ img{
         width: 40%;
     }
 
+    /* footer */
+
+    .footer-items section{
+        width: 65%;
+    }
+
+    .footer-items section i{
+        transition: all 450ms;
+    }
+
+    .footer-items section:hover i{
+        color: #0022AA;
+        font-size: 2.5em;
+    }
+
     /* main */
 
     main{
         margin-top: 15px;
     } 
 
-    .descripciones{
-        color:#666;
-        font-size: 16px;
-        margin-top: 15px;
-        margin-bottom: 15px;
-        display: inline-block;
-    }
     .productos{
-        box-shadow: 0px 0px 10px rgb(100, 100, 100);
         width: 40%;
+        transition: all 500ms;
     }
-    
 
-    
+    .productos:hover{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+
+    .descripciones{
+        transition: all 500ms;
+    }
+
+    .productos:hover .descripciones{
+        font-size: 16px;
+        color: #666;
+    }
+
+    .informacion{
+        transition: padding 500ms;
+    }
+    .productos:hover .informacion{
+        padding: 15px;
+    }
+
+    .informacion i{
+        transition: transform 500ms;
+    }
+
+    .productos:hover .informacion i{
+        transform: rotate(-90deg);
+    }
 
 }
 @media (min-width: 769px){
@@ -281,6 +330,20 @@ img{
     }
     .burger-menu{
         display: none;
+    }
+
+    /* footer */
+
+    .footer-items{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+    }
+    
+    .footer-items section{
+        width: 30%;
     }
 
     /* main */
