@@ -23,7 +23,7 @@ header p{
 }
 
 header a{
-    color: #000000;
+    color: #393838;
     text-decoration: none;
 }
 
@@ -41,7 +41,7 @@ header a{
 
 .burger-menu{
     text-align: center;
-    margin: 30px;
+    margin: 20px 30px;
 }
 
 .header-mobile{
@@ -211,22 +211,23 @@ img{
 
     .header-notebook{
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
         align-items: center;
         width: 100%;
-        padding-top: 0px;
+        padding: 0px 30px 0px 10px;
+        height: 100px;
     }
     .header-mobile{
-        width: 60%;
-        justify-content: space-between;
+        width: 70%;
+        justify-content: space-around;
     }
     .logo{
-        width: 30%;
+        width: 35%;
         flex-grow: 30%;
     }
     .barra-busqueda{
         margin: 20px;
-        width: 55%;
+        width: 50%;
         flex-grow: 70%;
         justify-self: center;
     }
@@ -237,7 +238,12 @@ img{
     .header-notebook p{
         font-size: 1.5em;
         justify-self: center;
-        width: 40%;
+        display: flex;
+        width: 30%;
+    }
+
+    .burger-menu{
+        margin: 15px 30px 25px;
     }
 
     /* footer */
@@ -300,6 +306,27 @@ img{
 
     /*header */
 
+    header a{
+        transition: all 350ms;
+    }
+
+    header a:hover{
+        color: #000000;
+        font-size: 1.05em;
+    }
+
+    .barra-busqueda form{
+        transition: 300ms;
+    }
+
+    .barra-busqueda:hover form{
+        border: #666 solid 1px;
+    }
+
+    .header-notebook{
+        height: 100px;
+    }
+
     .login,.site{
         text-align: left;
         display: inline;
@@ -315,7 +342,11 @@ img{
     .site{
         flex-grow: 55%;
         justify-content: space-around;
-        width: 38%;
+        width: 35%;
+    }
+
+    .logo{
+        width: 25%;
     }
     
     nav li{
@@ -327,6 +358,7 @@ img{
         align-items: center;
         width: 100%;
         margin-bottom: 20px;
+        margin-top: 0px;
     }
     .burger-menu{
         display: none;
